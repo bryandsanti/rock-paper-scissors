@@ -13,3 +13,12 @@ if (computerAnswer ==  1){
 } else {
     console.log('Scissors');
 }
+
+// Human's Choice //
+
+let humanChoice = prompt('What is your choice?');
+
+if (humanChoice != null && humanChoice.length != 0){
+    console.log(humanChoice.charAt(0).toLocaleUpperCase() + humanChoice.slice(1));
+}
+
