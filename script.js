@@ -1,5 +1,6 @@
 // Computer's Choice //
 
+
 function getComputerChoice(min , max){
     return Math.floor(Math.random() * (max-min) + min);
 }
@@ -20,7 +21,7 @@ if (computerAnswer ==  1){
 
 let humanChoice = prompt('What is your choice?').toLowerCase();
  
-if ( (humanChoice == ('rock' || 'paper' || 'scissors')) && humanChoice != null && humanChoice.length != 0 ){
+if ( (humanChoice === 'rock' || humanChoice === 'paper' || humanChoice === 'scissors') && humanChoice != null && humanChoice.length != 0 ){
     console.log(humanChoice.charAt(0).toLocaleUpperCase() + humanChoice.slice(1));
 } else {
     alert('Please pick a valid choice!')
